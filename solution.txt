@@ -63,17 +63,28 @@ ls lorem/*.txt
 
 16. Count the rows in sed.txt file from lorem folder. Look concatenate cat and wc with the pipe |.
 
-
+cat lorem/sed.txt | wc -l
 
 17. Count the files which start with lorem in all directories.
 
+find . -type f -name 'lorem*' | wc -l
+
 Bonus
 
-Store your name in a variable with read command.
+18. Store your name in a variable with read command.
 
-Print that variable.
+read my_name
+Niki
 
-Create a new directory named with variable name.
+19. Print that variable.
 
-Remove that directory.
+echo $my_name
+
+20. Create a new directory named with variable name.
+
+mkdir $my_name
+
+21. Remove that directory.
+
+rm -rf $my_name
 
